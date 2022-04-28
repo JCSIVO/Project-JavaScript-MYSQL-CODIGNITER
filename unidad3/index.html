@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora</title>
+</head>
+<body>
+	<div>
+		<h3>Operador 1</h3>
+		<input type="number" name="op1" id="op1_id">
+		<h3>Operador 2</h3>
+		<input type="number" name="op2" id="op2_id"><br><br>
+
+	</div>
+	<form name="calc">
+		<select name="operacion" id="operacion_id" >
+			<option value="1">Sumar</option>
+			<option value="2">Restar</option>
+			<option value="3">Multiplicar</option>
+			<option value="4">Dividir</option>
+		</select><br><br>
+	</form>
+	<div>
+		<button onclick="Calculadora()">Resultado</button><br><br>
+		<input type="number" name="resultado" id="resultado_id" readonly>
+	</div>
+</body>
+<script src="script.js"></script>
+</html>

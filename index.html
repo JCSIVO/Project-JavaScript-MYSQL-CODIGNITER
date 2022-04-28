@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Clase 6</title>
+</head>
+<body>
+	<form name="registro_form" onsubmit="registrarse(); return false;">
+		<div>
+			<label for="">Nombre</label>
+			<input type="text" name="nombre" id="nombre_id">
+		</div>
+		<div>
+			<label for="">Apellido</label>
+			<input type="text" name="apellido" id="apellido_id">
+		</div>
+		<div>
+			<label for="">Tipo de Curso</label>
+			<select name="tipo_curso" id="tipo_curso_id" onchange="seleccionarCurso()">
+				<option value="1">PHP</option>
+				<option value="2">JS</option>
+				<option value="3">REACT</option>
+			</select>
+			<div id="valor_curso"></div>
+		</div>
+		<div>
+			<label for="">Email</label>
+			<input type="email" name="email" id="email_id">
+		</div>
+		<div>
+			<label for="">contraseña</label>
+			<input type="password" name="password" id="password_id">
+		</div>
+		<button type="submit">Registrarse</button>
+	</form>
+	<h2>Cañculadora</h2>
+	<div>
+		<input type="number" name="op1" id="op1">
+		<input type="number" name="op2" id="op2">
+		<button onclick="sumar()">sumar</button>
+		<input type="number" name="resultado" id="resultado_id" readonly>
+	</div>
+
+</body>
+<script src="script.js"></script>
+</html>

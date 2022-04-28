@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Unidad 4</title>
+</head>
+<body>
+	<form name="registro_form" onsubmit="registrarse(); return false">
+		<div>
+			<label for="">Nombre</label>
+			<input type="text" name="nombre" id="nombre_id">
+		</div>
+		<div id="error_nombre"></div>
+		<div>
+			<label for="">Apellido</label>
+			<input type="text" name="apellido" id="apellido_id">
+		</div>
+		<div id="error_apellido"></div>
+		<div>
+			<label for="">Telefono</label>
+			<input type="tel" name="telefono" id="telefono_id">
+		</div>
+		<div id="error_telefono"></div>
+		<div>
+			<label for="">Tipo de Contacto</label>
+			<select name="tipo_contacto" id="tipo_contacto_id" onchange="seleccionarContacto()">
+				<option value="1">Soporte</option>
+				<option value="2">Ventas</option>
+			</select>
+		</div>
+		<div id="error_contacto"></div>
+		<div id="valor_contacto"></div>
+		<div>
+			<label for="">Email</label>
+			<input type="email" name="email" id="email_id">
+		</div>
+		<div id="error_email"></div>
+		<div>
+			<label for="">Asunto</label>
+			<input type="text" name="asunto" id="asunto_id">
+		</div>
+		<div id="error_asunto"></div>
+		<div>
+			<label for="">Descripcion</label>
+			<textarea name="descripcion" id="descripcion_id"></textarea>
+		</div>
+		<div id="error_descripcion"></div>
+		<button type="submit">Registrarse</button>
+		<div id="mensaje"></div>
+	</form>
+
+</body>
+<script src="script.js"></script>
+</html>

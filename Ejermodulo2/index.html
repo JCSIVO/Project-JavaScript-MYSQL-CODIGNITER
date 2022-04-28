@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Clase 6</title>
+</head>
+<body>
+	<form name="registro_form" onsubmit="registrarse(); return false;">
+		<div>
+			<label for="">Nombre</label>
+			<input type="text" name="nombre" id="nombre_id">
+		</div>
+		<div id="error_nombre"></div>
+		<div>
+			<label for="">Apellido</label>
+			<input type="text" name="apellido" id="apellido_id">
+		</div>
+		<div id="error_apellido"></div>
+		<div>
+			<label for="">Email</label>
+			<input type="email" name="email" id="email_id">
+		</div>
+		<div id="error_email"></div>
+		<div>
+			<label for="">Telefono</label>
+			<input type="tel" name="telefono" id="telefono_id">
+		</div>
+		<div id="error_telefono"></div>
+		<div>
+			<label for="">contraseña</label>
+			<input type="password" name="password" id="password_id">
+		</div>
+		<div id="error_password"></div>
+		<div>
+			<label for="">Repetir contraseña</label>
+			<input type="password" name="passwordd" id="passwordd_id">
+		</div>
+		<div id="error_passwordd"></div>
+		<button type="submit" onclick="registrarse()">Registrarse</button>
+		<button type="submit" onclick="comprobarClave()">Validar</button>
+	</form>
+	
+
+</body>
+<script src="script.js"></script>
+</html>
